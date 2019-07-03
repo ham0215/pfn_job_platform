@@ -17,6 +17,4 @@ services:
     command: tail -f /dev/null
     volumes:
       - ./worker:/app
-    ports:
-      - 8083:8080
     stdin_open: true
