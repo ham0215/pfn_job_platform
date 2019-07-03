@@ -30,5 +30,5 @@ http://server:8082/job
 docker-compose up --build -d
 
 # start worker
-docker-compose run worker
+docker-compose exec workder ruby worker.rb
 ```
