@@ -1,7 +1,6 @@
-require 'net/http'
+require './server.rb'
 
-res = Net::HTTP.start('server', 8080) do |http|
-  http.get('/job?time=00:00:00')
+Server.start do |srv|
+  p srv.job('00:00:00')
+  p srv.job('00:00:05')
 end
-
-p res.body.inspect

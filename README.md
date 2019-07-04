@@ -20,7 +20,7 @@ Docker Desktop 2.0.0.3
 http://server:8082/job
 
 # worker
-...
+ruby worker.rb
 ```
 
 ### How to run the development
