@@ -1,0 +1,6 @@
+FROM golang:1.12.7
+
+RUN mkdir -p /app
+WORKDIR /app
+
+COPY go /app

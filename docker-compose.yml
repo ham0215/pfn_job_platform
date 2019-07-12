@@ -18,3 +18,13 @@ services:
     volumes:
       - ./worker:/app
     stdin_open: true
+  go:
+    build:
+      context: .
+      dockerfile: Dockerfile-go
+    command: go run server1.go
+    volumes:
+      - ./go:/app
+    ports:
+      - 8083:8083
+    stdin_open: true
